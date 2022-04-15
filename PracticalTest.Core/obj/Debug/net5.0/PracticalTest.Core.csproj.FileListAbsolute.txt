@@ -1,0 +1,12 @@
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\bin\Debug\net5.0\PracticalTest.Core.deps.json
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\bin\Debug\net5.0\PracticalTest.Core.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\bin\Debug\net5.0\PracticalTest.Core.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.csproj.AssemblyReference.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.AssemblyInfoInputs.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.AssemblyInfo.cs
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.csproj.CoreCompileInputs.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\refint\PracticalTest.Core.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\PracticalTest.Core.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Core\obj\Debug\net5.0\ref\PracticalTest.Core.dll

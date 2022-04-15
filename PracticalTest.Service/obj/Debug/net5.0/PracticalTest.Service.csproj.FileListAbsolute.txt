@@ -1,0 +1,17 @@
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Service.deps.json
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Service.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Service.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Core.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Repository.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Repository.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\bin\Debug\net5.0\PracticalTest.Core.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.csproj.AssemblyReference.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.AssemblyInfoInputs.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.AssemblyInfo.cs
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.csproj.CoreCompileInputs.cache
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.csproj.CopyComplete
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\refint\PracticalTest.Service.dll
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\PracticalTest.Service.pdb
+C:\Users\Alizaman Habibli\source\repos\PracticalTest\PracticalTest.Service\obj\Debug\net5.0\ref\PracticalTest.Service.dll

@@ -1,0 +1,39 @@
+﻿@using System.Globalization
+@model System.Collections.Generic.IEnumerable<PracticalTest.Core.Dtos.LoanDto>
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Client Id</th>
+        <th scope="col">Client</th>
+        <th scope="col">Loan Amount</th>
+        <th scope="col">Payout Date</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ClientUniqueId</td>
+            <td>@(item.ClientName + " " + item.ClientSurname)</td>
+            <td>@item.Amount</td>
+            <td>@item.PayoutDate.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture)</td>
+            <td style="display: flex;">
+                <a type="button" class="btn btn-success" asp-controller="Loan" asp-action="LoanDetails" asp-route-Id="@item.Id"><i class="fa-solid fa-eye"></i></a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<button asp type="button" class="btn btn-danger" style="margin-bottom: 10px;float: right;margin-right: 30px;" onclick="closePage()">
+    <i class="fa-solid fa-close fa-lg"></i>&nbsp;Exit
+</button>
+
+<a type="button" id = "new" class="btn btn-primary" style="margin-bottom: 10px;float: right;margin-right: 30px;" asp-controller="Loan" asp-action="Save">
+    <i class="fa-solid fa-plus fa-lg"></i>&nbsp;New
+</a>
+@section Scripts
+{
+    <script src="js/site.js"></script>
+}

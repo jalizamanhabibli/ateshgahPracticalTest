@@ -1,0 +1,2 @@
+Migration-lar yaranib update-database eliyib db-ni yarada bilersiniz. Connection String-i deyishmek lazimdi.
+Prosedur-u elave .sql file kimi elave etmishem onuda sql management studioda execute eliyib proyekti ele ishlede bilersiniz.

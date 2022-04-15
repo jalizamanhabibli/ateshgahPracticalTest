@@ -1,0 +1,92 @@
+﻿@using System.Globalization
+@model PracticalTest.Core.Dtos.LoanDetailsDto
+
+@{
+    var items = new List<SelectListItem>();
+    for (int j = 3; j <= 24; j++)
+    {
+        items.Add(new SelectListItem(j.ToString(),j.ToString()));
+    }
+}
+@{ var i = 1;}
+<form asp-controller="Loan" asp-action="Save" method="post">
+
+    <div class="form-group">
+        <label>Client</label>
+        <select id="clientsSelect" class="form-control" disabled="disabled">
+            <option value="@Model.Client.Id">@Model.Client.ClientUniqueId | @Model.Client.Name @Model.Client.Surname</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Telephone Number</label>
+        <input id="clientPhone" type="text" class="form-control" value="@Model.Client.TelephoneNr" disabled="disabled">
+
+    </div>
+    <div class="form-group">
+        <label>Loan Amount</label>
+        
+        <input id="loanAmount" type="text" asp-for="Amount" class="form-control" disabled="disabled">
+    </div>
+
+    <div class="form-group">
+        <label>Loan Period</label>
+        <select asp-items="items" id="clientsSelect" asp-for="LoanPeriod" class="form-control" disabled="disabled">
+            <option>Choose select...</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Monthly interest rate(%)</label>
+        <input id="interestRate" type="number" asp-for="InterestRate" class="form-control" disabled="disabled">
+    </div>
+    <div class="form-group">
+        <label>Payout Date</label>
+        <input id="payoutDate" type="date" asp-for="PayoutDate" class="form-control" disabled="disabled">
+    </div>
+
+    <div id="table">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Invoice No</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var invoice in Model.Invoices)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td>@invoice.InvoiceNo</td>
+                        <td>@invoice.DueDate.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture)</td>
+                        <td>@invoice.Amount</td>
+                    </tr>
+                    i++;
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row" id="totalInterestBase">
+        <div class="form-group">
+            <label>Total Interest</label>
+            <input id="totalInterest" type="text" value="@(Model.Invoices.Sum(x=>x.Amount) - Model.Amount)" class="form-control" disabled="disabled">
+        </div>
+    </div>
+
+    <div class="row">
+        <a type="button" class="btn btn-danger" style="margin-bottom: 10px;float: right; margin-right: 30px;" asp-controller="Loan" asp-action="Index"> Cancel</a>
+    </div>
+
+
+
+
+</form>
+@section Scripts
+{
+<script src="js/site.js"></script>
+<partial name="_ValidationScriptsPartial" />
+}
+

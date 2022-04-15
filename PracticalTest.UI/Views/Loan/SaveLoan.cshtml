@@ -1,0 +1,81 @@
+﻿@model PracticalTest.Core.Dtos.LoanInsertDto
+@{
+    var items = new List<SelectListItem>();
+    for (int i = 3; i <= 24; i++)
+    {
+        items.Add(new SelectListItem(i.ToString(),i.ToString()));
+    }
+}
+<form id="saveForm" asp-controller="Loan" asp-action="Save" method="post">
+    <div id="error">
+        
+    </div>
+    <div class="form-group">
+        <label>Client</label>
+        <select id="clientsSelect" asp-for="ClientId" class="form-control">
+            <option>Choose select...</option>
+        </select>
+        <span asp-validation-for="ClientId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Telephone Number</label>
+        <input id="clientPhone" type="text" class="form-control" placeholder="+9941111111" disabled="disabled">
+    </div>
+    
+    
+
+    <div class="form-group">
+        <label>Loan Amount</label>
+        <input id="loanAmount" type="number" asp-for="Amount" class="form-control">
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Loan Period</label>
+        <select id="clientsSelect" asp-for="LoanPeriod" class="form-control" asp-items="items">
+            <option>Choose select...</option>
+        </select>
+        <span asp-validation-for="LoanPeriod" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Monthly interest rate(%)</label>
+        <input id="interestRate" type="number" asp-for="InterestRate"  class="form-control">
+        <span asp-validation-for="InterestRate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Payout Date</label>
+        <input id="payoutDate" type="date" asp-for="PayoutDate"  class="form-control">
+        <span asp-validation-for="PayoutDate" class="text-danger"></span>
+    </div>
+    
+
+    <div class="row">
+        <div class="form-group ">
+            <button type="button" class="btn btn-info " id="calculateInvoices" onclick="createObj()"> Calculate Invoices</button>
+        </div>
+    </div>
+    <div id="table">
+    </div>
+    <div class="row d-none" id="totalInterestBase">
+        <div class="form-group">
+            <label>Total Interest</label>
+            <input id="totalInterest" type="text"  class="form-control" disabled="disabled">
+        </div>
+    </div>
+   
+    <div class = "row"> 
+        <a type="button" class="btn btn-danger" style="margin-bottom: 10px;float: right; margin-right: 30px;" asp-controller="Loan" asp-action="Index"> Cancel</a>
+        <input id = "issueLoan" type="submit" class="btn btn-success" style="margin-bottom: 10px;float: right;margin-right: 30px;" disabled="disabled" value="Issue Loan" /> 
+    </div>
+   
+
+    
+
+</form>
+@section Scripts
+{
+    <script src="~/js/clinets.js" asp-append-version="true"></script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
